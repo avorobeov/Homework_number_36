@@ -41,7 +41,7 @@ namespace Homework_number_36
                         break;
 
                     case CommandDelete:
-                        DeleteFromDatabase(fullNames,positions);
+                        DeleteFromDatabase(fullNames, positions);
                         break;
 
                     case CommandExit:
