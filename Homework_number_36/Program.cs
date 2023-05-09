@@ -7,10 +7,10 @@ namespace Homework_number_36
     {
         static void Main(string[] args)
         {
-            const string СommandAddUser = "Add";
-            const string CommandPrint = "Print";
-            const string CommandDelete = "Delete";
-            const string CommandExit = "Exit";
+            const string СommandAddUser = "1";
+            const string CommandPrint = "2";
+            const string CommandDelete = "3";
+            const string CommandExit = "4";
 
             List<string> fullNames = new List<string>();
             List<string> positions = new List<string>();
@@ -92,7 +92,7 @@ namespace Homework_number_36
 
             if (int.TryParse(input, out indexDossier))
             {
-                if (indexDossier < fullNames.Count && indexDossier < positions.Count)
+                if (indexDossier < fullNames.Count && indexDossier < positions.Count && indexDossier >= 0)
                 {
                     fullNames.RemoveAt(indexDossier);
                     positions.RemoveAt(indexDossier);
