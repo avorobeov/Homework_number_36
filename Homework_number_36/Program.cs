@@ -89,10 +89,11 @@ namespace Homework_number_36
             Console.WriteLine("Укажите индекс досье для удаления из базы данных: ");
             string input = Console.ReadLine();
             int indexDossier;
+            int minIndex = 0;
 
             if (int.TryParse(input, out indexDossier))
             {
-                if (indexDossier < fullNames.Count && indexDossier < positions.Count && indexDossier >= 0)
+                if (indexDossier < fullNames.Count && indexDossier < positions.Count && indexDossier >= minIndex)
                 {
                     fullNames.RemoveAt(indexDossier);
                     positions.RemoveAt(indexDossier);
